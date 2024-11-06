@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20241022 21:05:02.924" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\Luiz\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Abrir Site">
+<msg timestamp="20241022 21:05:03.896" level="FAIL">No keyword with name 'Abrir Site' found.</msg>
+<status status="FAIL" starttime="20241022 21:05:03.896" endtime="20241022 21:05:03.896"/>
+</kw>
+<kw name="Aguardar Site">
+<status status="NOT RUN" starttime="20241022 21:05:03.897" endtime="20241022 21:05:03.897"/>
+</kw>
+<kw name="Acessar botao login">
+<status status="NOT RUN" starttime="20241022 21:05:03.899" endtime="20241022 21:05:03.899"/>
+</kw>
+<kw name="Aguardar Site">
+<status status="NOT RUN" starttime="20241022 21:05:03.901" endtime="20241022 21:05:03.901"/>
+</kw>
+<kw name="Digitar e-mail">
+<arg>teste@gmail.com</arg>
+<status status="NOT RUN" starttime="20241022 21:05:03.903" endtime="20241022 21:05:03.903"/>
+</kw>
+<kw name="Digitar senha">
+<status status="NOT RUN" starttime="20241022 21:05:03.909" endtime="20241022 21:05:03.910"/>
+</kw>
+<kw name="Clicar em logar">
+<status status="NOT RUN" starttime="20241022 21:05:03.914" endtime="20241022 21:05:03.914"/>
+</kw>
+<status status="PASS" starttime="20241022 21:05:02.953" endtime="20241022 21:05:06.348"/>
+</kw>
+<status status="PASS" starttime="20241022 21:05:02.952" endtime="20241022 21:05:06.349"/>
+</test>
+<status status="PASS" starttime="20241022 21:05:02.925" endtime="20241022 21:05:06.349"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20241029 20:39:04.894" rpa="false" schemaversion="4">
+<suite id="s1" name="Arguments" source="D:\robotframework\arguments.robot">
+<test id="s1-t1" name="Cenário 1: Acessando o site do Robot" line="25">
+<kw name="Abrir Site">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE_URL_SITEQAZANDO}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20241029 20:39:05.109" level="INFO">Opening browser 'chrome' to base url 'https://automationpratice.com.br/'.</msg>
+<msg timestamp="20241029 20:39:05.529" level="WARN">The chromedriver version (130.0.6723.69) detected in PATH at C:\Users\Luiz\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (130.0.6723.71); currently, chromedriver 130.0.6723.91 is recommended for chrome 130.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20241029 20:39:05.109" endtime="20241029 20:39:07.370"/>
+</kw>
+<status status="PASS" starttime="20241029 20:39:05.109" endtime="20241029 20:39:07.371"/>
+</kw>
+<kw name="Aguardar Site">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241029 20:39:10.373" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20241029 20:39:07.372" endtime="20241029 20:39:10.373"/>
+</kw>
+<status status="PASS" starttime="20241029 20:39:07.372" endtime="20241029 20:39:10.373"/>
+</kw>
+<kw name="Acessar botao login">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20241029 20:39:10.375" level="INFO">Clicking element 'xpath://a[@href='/login']'.</msg>
+<status status="PASS" starttime="20241029 20:39:10.374" endtime="20241029 20:39:10.464"/>
+</kw>
+<status status="PASS" starttime="20241029 20:39:10.374" endtime="20241029 20:39:10.464"/>
+</kw>
+<kw name="Aguardar Site">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241029 20:39:13.465" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20241029 20:39:10.465" endtime="20241029 20:39:13.465"/>
+</kw>
+<status status="PASS" starttime="20241029 20:39:10.464" endtime="20241029 20:39:13.466"/>
+</kw>
+<kw name="Digitar e-mail">
+<arg>teste@gmail.com</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:user</arg>
+<arg>${usuario}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20241029 20:39:13.468" level="INFO">Typing text 'teste@gmail.com' into text field 'id:user'.</msg>
+<status status="PASS" starttime="20241029 20:39:13.468" endtime="20241029 20:39:13.643"/>
+</kw>
+<status status="PASS" starttime="20241029 20:39:13.468" endtime="20241029 20:39:13.643"/>
+</kw>
+<kw name="Digitar senha">
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>123456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20241029 20:39:13.645" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg timestamp="20241029 20:39:13.720" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20241029 20:39:13.772" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20241029 20:39:13.643" endtime="20241029 20:39:13.772"/>
+</kw>
+<status status="PASS" starttime="20241029 20:39:13.643" endtime="20241029 20:39:13.772"/>
+</kw>
+<kw name="Clicar em logar">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:btnLogin</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20241029 20:39:13.772" level="INFO">Clicking element 'id:btnLogin'.</msg>
+<status status="PASS" starttime="20241029 20:39:13.772" endtime="20241029 20:39:13.843"/>
+</kw>
+<status status="PASS" starttime="20241029 20:39:13.772" endtime="20241029 20:39:13.843"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Login realizado</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20241029 20:39:13.843" endtime="20241029 20:39:13.855"/>
+</kw>
+<status status="PASS" starttime="20241029 20:39:05.108" endtime="20241029 20:39:13.856"/>
+</test>
+<test id="s1-t2" name="Cenário 2: Acessando o site do Robot" line="35">
+<kw name="Abrir Site">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE_URL_SITEQAZANDO}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20241029 20:39:13.857" level="INFO">Opening browser 'chrome' to base url 'https://automationpratice.com.br/'.</msg>
+<msg timestamp="20241029 20:39:14.386" level="WARN">The chromedriver version (130.0.6723.69) detected in PATH at C:\Users\Luiz\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (130.0.6723.71); currently, chromedriver 130.0.6723.91 is recommended for chrome 130.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20241029 20:39:13.857" endtime="20241029 20:39:16.171"/>
+</kw>
+<status status="PASS" starttime="20241029 20:39:13.856" endtime="20241029 20:39:16.171"/>
+</kw>
+<kw name="Aguardar Site">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241029 20:39:19.174" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20241029 20:39:16.172" endtime="20241029 20:39:19.174"/>
+</kw>
+<status status="PASS" starttime="20241029 20:39:16.171" endtime="20241029 20:39:19.174"/>
+</kw>
+<kw name="Acessar botao login">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20241029 20:39:19.174" level="INFO">Clicking element 'xpath://a[@href='/login']'.</msg>
+<status status="PASS" starttime="20241029 20:39:19.174" endtime="20241029 20:39:19.283"/>
+</kw>
+<status status="PASS" starttime="20241029 20:39:19.174" endtime="20241029 20:39:19.283"/>
+</kw>
+<kw name="Aguardar Site">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241029 20:39:22.285" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20241029 20:39:19.284" endtime="20241029 20:39:22.285"/>
+</kw>
+<status status="PASS" starttime="20241029 20:39:19.284" endtime="20241029 20:39:22.286"/>
+</kw>
+<kw name="Digitar e-mail">
+<arg>adm@gmail.com</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:user</arg>
+<arg>${usuario}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20241029 20:39:22.289" level="INFO">Typing text 'adm@gmail.com' into text field 'id:user'.</msg>
+<status status="PASS" starttime="20241029 20:39:22.287" endtime="20241029 20:39:22.457"/>
+</kw>
+<status status="PASS" starttime="20241029 20:39:22.287" endtime="20241029 20:39:22.457"/>
+</kw>
+<kw name="Digitar senha">
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>123456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20241029 20:39:22.459" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg timestamp="20241029 20:39:22.523" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20241029 20:39:22.609" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20241029 20:39:22.458" endtime="20241029 20:39:22.609"/>
+</kw>
+<status status="PASS" starttime="20241029 20:39:22.458" endtime="20241029 20:39:22.609"/>
+</kw>
+<kw name="Clicar em logar">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:btnLogin</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20241029 20:39:22.611" level="INFO">Clicking element 'id:btnLogin'.</msg>
+<status status="PASS" starttime="20241029 20:39:22.611" endtime="20241029 20:39:22.714"/>
+</kw>
+<status status="PASS" starttime="20241029 20:39:22.610" endtime="20241029 20:39:22.714"/>
+</kw>
+<status status="PASS" starttime="20241029 20:39:13.856" endtime="20241029 20:39:22.715"/>
+</test>
+<status status="PASS" starttime="20241029 20:39:04.896" endtime="20241029 20:39:22.716"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Arguments">Arguments</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20241029 20:39:05.529" level="WARN">The chromedriver version (130.0.6723.69) detected in PATH at C:\Users\Luiz\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (130.0.6723.71); currently, chromedriver 130.0.6723.91 is recommended for chrome 130.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20241029 20:39:14.386" level="WARN">The chromedriver version (130.0.6723.69) detected in PATH at C:\Users\Luiz\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (130.0.6723.71); currently, chromedriver 130.0.6723.91 is recommended for chrome 130.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
